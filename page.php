@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="stylle.css"></script>
     <link rel="stylesheet" href="stylle.css">
+    <script defer src="fun.js"></script>
     <title>Document</title>
 </head>
-<body>
+
+<body class="cad">
+
+    <header class="header">
+
+    <nav class="nav">
+
+    <a class="logo" href="/">Tiger codes</a>
+
+    <button class="hamburger"></button>
+
+    <ul class="nav-list">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/">Projetos</a></li>
+        <li><a href="/">Contato</a></li>
+    </ul>
+
+    </nav>
+
+    </header>
+
+    <main>
+
     <div class="container_resul">
-        <form action="form_fun.php" method="$_POST">
+        <form action="form_fun.php" method="POST">
             <h1>Cadastre-se</h1>
             <p>Preencha todos os campos</p>
 
             <div class="inp-single">
-                <input type="text" class="inp" name="nombre" id="id_name" autocomplete="off" required>
+                <input type="text" class="inp" name="nome" id="id_name" autocomplete="off" required>
                 <label for="id_name">Nome completo</label>
                 </div>
 
@@ -40,10 +64,12 @@
                 <input type="submit" class="btn_sub" name="sub_env">
             </div>
 
+    </main>
+
         </form>
     </div>
 
-    <div class="data_h">
+        <div class="data_h">
             <?php
 
             date_default_timezone_set('America/Sao_Paulo');

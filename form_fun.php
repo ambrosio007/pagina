@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="stylle.css"></script>
+    <link rel="stylesheet" href="stylle.css">
     <title>Document</title>
+
+    <style>
+
+    </style>
+
 </head>
 <body>
 
-<form action="">
+<main>
+
+<form>
 
     <?php 
 
-    if($_SERVER["REQUEST_METHOD"] == "$_POST"){
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         
-    $nome = htmlspecialchars($_POST['nombre']);
+    $nome = htmlspecialchars($_POST['nome']);
     $num_tel = htmlspecialchars($_POST['num_tel']);
     $date = htmlspecialchars($_POST['dma']);
     $email = htmlspecialchars($_POST['email']);
@@ -30,7 +39,6 @@
         header("Location: page.php");
         exit();
     }
-
     ?>    
   
     <div class="imc_cal">
@@ -43,7 +51,9 @@
                 <input type="submit" value="calcular IMC">
     </div>
 
+    </main>
 
+    
 
 </form>
 </body>
