@@ -1,0 +1,79 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img_fun_academia.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}
+
+form {
+    background-color: aliceblue;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1 {
+    text-align: center;
+    
+}
+
+form p {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.inp-single {
+    position: relative;
+    margin: 20px 0;
+
+}
+
+.inp-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.inp {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .inp-single .inp:focus ~ label,
+form .inp-single .inp:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: gray;
+
+}
+
+.btn_sub {
+    position: relative;
+    background-color: cadetblue;
+    width: 50%;
+    border-radius: 30px;
+    padding: 10px 40px;
+    border: 0;
+    border-bottom: rgb(108, 160, 161);
+}

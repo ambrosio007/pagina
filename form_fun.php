@@ -6,13 +6,32 @@
     <title>Document</title>
 </head>
 <body>
+
 <form action="">
 
-    <?php
+    <?php 
 
-    echo date("d/m/y"); 
- 
-    ?>
+    if($_SERVER["REQUEST_METHOD"] == "$_POST"){
+
+        
+    $nome = htmlspecialchars($_POST['nombre']);
+    $num_tel = htmlspecialchars($_POST['num_tel']);
+    $date = htmlspecialchars($_POST['dma']);
+    $email = htmlspecialchars($_POST['email']);
+    $senha = htmlspecialchars($_POST['senha']);
+
+    echo "<p><strong>Nome completo:</strong> $nome</p>";
+    echo "<p><strong>Número para contato:</strong> $num_tel</p>";
+    echo "<p><strong>Data de nascimento:</strong> $date</p>";
+    echo "<p><strong>E-mail:</strong> $email</p>";
+    echo "<p><strong>Senha:</strong> $senha</p>";
+
+    }else {
+        header("Location: page.php");
+        exit();
+    }
+
+    ?>    
   
     <div class="imc_cal">
                 <input type="text" class="inp" name="peso" id="id_peso">
