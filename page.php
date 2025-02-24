@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="stylle.css"></script>
     <link rel="stylesheet" href="stylle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="fun.js"></script>
     <title>Document</title>
 </head>
@@ -15,16 +16,31 @@
 
     <nav class="nav">
 
-    <a class="logo" href="/">Tiger codes</a>
+    <i class="fa-solid fa-dumbbell" id="nav-log">Lab 7</i>
 
     <button class="hamburger"></button>
 
     <ul class="nav-list">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/">Sobre</a></li>
-        <li><a href="/">Projetos</a></li>
-        <li><a href="/">Contato</a></li>
+
+        <li class="nav-item">
+            <a href="#home">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#sobre">Sobre</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#projetos">Projetos</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#contato">Contato</a>
+        </li>
+
     </ul>
+
+    <h1 class="date-h" id="data_hora"></h1>
 
     </nav>
 
@@ -64,19 +80,15 @@
                 <input type="submit" class="btn_sub" name="sub_env">
             </div>
 
+            <div class="date-h">
+            
+            </div>
     </main>
+
+
 
         </form>
     </div>
-
-        <div class="data_h">
-            <?php
-
-            date_default_timezone_set('America/Sao_Paulo');
-            echo date('d/m/Y H:i'); 
-         
-            ?>
-        </div>
 
 </body>
 </html>

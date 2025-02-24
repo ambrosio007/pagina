@@ -85,12 +85,13 @@ nav {
         pointer-events: none;
     }
 
-    .nav-actice .nav-list{
+    .nav.active .nav-list{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 
 }
+
 
 
 
@@ -172,4 +173,11 @@ form .inp-single .inp:valid ~ label {
     padding: 10px 40px;
     border: 0;
     border-bottom: rgb(108, 160, 161);
+}
+
+.date-h {
+    background-color: rgb(86, 87, 87);
+    border: 2px solid  black;
+    border-radius: 5px;
+    color: aliceblue;
 }
