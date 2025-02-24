@@ -1,0 +1,183 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.header{
+    background: rgb(62, 12, 12);
+    padding-inline: 16px;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: aliceblue;
+    padding-block: 16px;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: aliceblue;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .hamburger{
+        display: block;
+    }
+
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(62, 12, 12);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .nav-list{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+}
+
+
+
+
+main {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-image: url(tipos-de-academia-1.jpeg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}
+
+form {
+    background-color: aliceblue;
+    max-width: 500px;
+    height: 400px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1 {
+    text-align: center;
+    
+}
+
+form p {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.inp-single {
+    position: relative;
+    margin: 20px 0;
+
+}
+
+.inp-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.inp {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .inp-single .inp:focus ~ label,
+form .inp-single .inp:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: gray;
+
+}
+
+.btn_sub {
+    position: relative;
+    background-color: cadetblue;
+    width: 50%;
+    border-radius: 30px;
+    padding: 10px 40px;
+    border: 0;
+    border-bottom: rgb(108, 160, 161);
+}
+
+.date-h {
+    background-color: rgb(86, 87, 87);
+    border: 2px solid  black;
+    border-radius: 5px;
+    color: aliceblue;
+}
