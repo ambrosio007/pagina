@@ -1,104 +1,82 @@
-*{
-margin: 0;
-padding: 0;
-}
-
-a {
-    color: aliceblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-}
-
-a:hover {
-    opacity: 0.7;
-}
-
-.header{
-    background: rgb(62, 12, 12);
-    padding-inline: 16px;
-}
-
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-nav {
-    max-width: 1280px;
-    height: 70px;
-    margin-inline: auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
-
-.nav-list a {
-    font-size: 18px;
-    color: aliceblue;
-    padding-block: 16px;
-}
-
-.hamburger {
-    display: none;
+    outline: none;
     border: none;
-    background: none;
-    border-top: 3px solid #ffffff;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(5, 238, 230);
+}
+
+body {
+    background: #000;
+}
+
+header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 10000;
+    border: #000;
+}
+
+header .logo{
+    font-weight: bold;
+    color: #fff;
+    font-size: 3rem;
+}
+
+header .logo i {
+    color: rgb(5, 238, 230);
+}
+
+header .nav a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+header .nav a:hover {
+    background: rgb(5, 238, 230);
+}
+
+#mobile-btn {
+    font-size: 3rem;
+    color: #fff;
     cursor: pointer;
+    display: none;
 }
-
-.hamburger::before,
-.hamburger::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: aliceblue;
-    margin-top: 5px;
-}
-
-@media (max-width: 750px) {
-    .hamburger{
-        display: block;
-    }
-
-    .nav-list{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgb(62, 12, 12);
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
-
-    .nav.active .nav-list{
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-
-}
-
-
-
 
 main {
     width: 100%;
     height: calc(100vh - 70px);
-    background-image: url(tipos-de-academia-1.jpeg);
+    background-image: url(img/tipos-de-academia-1.jpeg);
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,9 +153,3 @@ form .inp-single .inp:valid ~ label {
     border-bottom: rgb(108, 160, 161);
 }
 
-.date-h {
-    background-color: rgb(86, 87, 87);
-    border: 2px solid  black;
-    border-radius: 5px;
-    color: aliceblue;
-}

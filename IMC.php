@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style-imc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script defer src="fun.js"></script>
     <title>Calculadora de IMC</title>
 
 </head>
 <body>
 
-<header class="header">
+<header class="nav-bar">
+        <div id="mobile-btn" class="fas fa-bar"> </div>
 
+        <a href="home.html" class="logo"><i class="fa-solid fa-dumbbell" id="nav-log" href="home.html"></i>Lab 7</a>
+        
+        <nav class="nav">
+                
+
+                    <a href="home.html">Inicio</a>                           
+                    <a href="IMC.php">IMC</a>                          
+                    <a href="cadastre.html">Cadastre-se</a>             
+                    <a href="#projetos">Projetos</a>
+
+        </nav>
 
 </header>
+
 
 <main>
     <div class="imc_cal">
@@ -40,7 +54,7 @@
             <div class="inp-single">
 
             <input type="submit" name="calcular" value="Calcular IMC">
-
+            
             </div>
             <br> <br>
             <?php

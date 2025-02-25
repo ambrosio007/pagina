@@ -25,7 +25,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb{
-    background: rgb(5 , 238, 21);
+    background: rgb(5 , 238, 230);
 }
 
 body {
@@ -56,7 +56,7 @@ section {
 
 .heading span {
     font-size: 3rem;
-    color: rgb(5 , 238, 21);
+    color: rgb(5 , 238, 230);
     background: #000;
     padding: .5rem 1.5rem;
     border: 0.1rem solid #aaa;
@@ -69,7 +69,7 @@ section {
     display: inline-block;
     padding: 1rem 2.8rem;
     padding-right: 3rem;
-    background: linear-gradient(130deg, rgb(5 ,238 , 21) 93%, transparent 90%);
+    background: linear-gradient(130deg, rgb(5, 238, 230) 93%, transparent 90%);
     color: #fff;
     cursor: pointer;
     font-size: 1.7rem;
@@ -99,7 +99,7 @@ header .logo{
 }
 
 header .logo i {
-    color: rgb(5 , 238, 21);
+    color: rgb(5, 238, 230);
 }
 
 header .nav a {
@@ -110,5 +110,121 @@ header .nav a {
 }
 
 header .nav a:hover {
-    background: rgb(5 , 238, 21);
+    background: rgb(5, 238, 230);
+}
+
+#mobile-btn {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    padding: 0;
+    margin-top: 5rem;
+}
+
+.home .slide{
+    min-height: 90vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+}
+
+.home .slide .content {
+    width: 60rem;
+}
+
+.home .slide .content span {
+    font-size: 2rem;
+    color: rgb(5 , 238, 230);
+    display: block;
+}
+
+.home .slide .content h3 {
+    font-size: 5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.swiper-pagination-bullet {
+    height: 2rem;
+    width: 2rem;
+    background: #fff;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgb(5 , 238, 230);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.about .img {
+    flex: 1 1 42rem;
+    position: relative;
+}
+
+.about .img::before,
+.about .img::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: rgb(5 , 238, 230);
+    height: 15rem;
+    width: 15rem;
+}
+
+.about .img::before {
+    top: 0;
+    left: 0;
+}
+
+.about .img::after {
+    bottom: 0;
+    right: 0;
+}
+
+.about .content {
+    flex: 1 1 42rem;
+}
+
+.about .content span {
+    font-size: 2rem;
+    color: rgb(5 , 238, 230);
+}
+
+.about .content .title {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .content .box-cotainer .box {
+    font-size: 1 1 20rem;
+}
+
+.about .content .box-cotainer .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.about .content .box-cotainer .box h3 i {
+    padding: 1.5rem;
+    color: rgb(5 , 238, 230);
 }
