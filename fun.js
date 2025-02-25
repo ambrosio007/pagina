@@ -1,8 +1,10 @@
+//butão hamburger mobile
 const hamburge = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
 
 hamburge.addEventListener("click", () => nav.classList.toggle("active"));
 
+// função data e hora em tempo real
 function atualizarDataHora() {
     const agora = new Date();
 
@@ -22,5 +24,6 @@ function atualizarDataHora() {
     document.getElementById("data_hora").textContent = dataHoraAtual;
   }
 
-  atualizarDataHora(); 
-  setInterval(atualizarDataHora, 1000); 
+atualizarDataHora(); 
+setInterval(atualizarDataHora, 1000); 
+

@@ -3,77 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style-home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="fun.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="fun.js"></script>
+    <title>Home Page</title>
+
 </head>
 
-<body class="cad">
+<body>
 
-    <header class="header">
+    <header class="nav-bar">
+        <div id="mobile-btn" class="fas fa-bar"> </div>
+        
+        <a href="home.html" class="logo"><i class="fa-solid fa-dumbbell" id="nav-log" href="home.html"></i>Lab 7</a>
+        
+        <nav class="nav">
+                
 
-    <nav class="nav">
-
-    <i class="fa-solid fa-dumbbell" id="nav-log">Lab 7</i>
-
-    <button class="hamburger"></button>
-
-    <ul class="nav-list">
-
-        <li class="nav-item">
-            <a href="#home">Inicio</a>
-        </li>
-
-        <li class="nav-item">
-            <a href="#planos">Planos</a>
-        </li>
-
-        <li class="nav-item">
-            <a href="#cadastro">Cadastre-se</a>
-        </li>
-
-        <li class="nav-item">
-            <a href="#Calculo">Calcular Imc</a>
-        </li>
-
-    </ul>
-
-    <h1 class="date-h" id="data_hora"></h1>
-
-    </nav>
+                    <a href="home.html">Inicio</a>                           
+                    <a href="IMC.php">IMC</a>                          
+                    <a href="cadastre.html">Cadastre-se</a>             
+                    <a href="#projetos">Projetos</a>
+        </nav>
 
     </header>
 
-    <main>
-
-    <div class="container">
+    <main class="mid">
         
-        <div class="card">
+        <section id="id-home" class="home">
 
-            <ul class="card-list">
+            <div class="swiper home-slide">
 
-                <li class="card-item">
-                    <a href="#" class="card-link"></a>
-                    <img src="carde-img-1.jpg" alt="Card Image" class="card-img">
-                    <p class="badge">Plano Mensal</p>
-                    <h2 class="card-title">80,00 R$</h2>
-                    <button class="card-btn">Assinar</button>
-                </li>
+                <div class="swiper-wrapeer" style="background-image: url(img/card-img-1.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Não espere por oportunidades, crie-as</span>
+                        <h3>Seja mais forte do que suas desculpas.</h3>
+                        <a href="#" class="btn">Iniciar</a>
+                    </div>
 
-            </ul>
+                <div class="swiper-wrapeer" style="background-image: url(img/card-img-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Não espere por oportunidades, crie-as</span>
+                        <h3>Seja mais forte do que suas desculpas.</h3>
+                        <a href="#" class="btn">Iniciar</a>
+                    </div>
+                </div>
 
-        </div>
+                <div class="swiper-wrapeer" style="background-image: url(img/card-img-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Não espere por oportunidades, crie-as</span>
+                        <h3>Seja mais forte do que suas desculpas.</h3>
+                        <a href="#" class="btn">Iniciar</a>
+                    </div>
+                </div>
 
+            </div>
+
+        </section>
+
+        <section id="about" class="about">
+
+            <div  class="image">
+                <img src="img/tipos-de-academia-1.jpeg" alt="">
+            </div>
+
+            <div class="content">
+
+                <span>Sobre nós</span>
+                <h3 class="title">Disciplina é a ponte entre metas e realizações.</h3>
+                <p>Escreva algo</p>
+
+            <div class="box-container">
+                <div class="box">
+                    <h3><i class="fa-solid fa-dumbbell">Corpo e mente</i></h3>
+                    <p>Treine seu corpo e sua mente sera treinada</p>
+                </div>
+
+                <div class="box">
+                    <h3><i class="fa-solid fa-dumbbell">Vida saldável</i></h3>
+                    <p>Conquiste uma vida saldável</p>
+                </div>
+
+                <div class="box">
+                    <h3><i class="fa-solid fa-dumbbell">Estratégias/i></h3>
+                    <p>Estratégias para seu treinamento</p>
+                </div>
+
+                <div class="box">
+                    <h3><i class="fa-solid fa-dumbbell">Treino</i></h3>
+                    <p>Treine seu corpo</p>
+                </div>
+            </div>
+            <a href="#" class="btn">Ler Mais</a>
+            </div>
+
+        </section>
+
+        <section id="id-features"class="features">
+
+            <h1 class="heading"> </h1><span>O que oferecemos </span></h1>
+
+            <div class="box-container">
+                <div class="image">
+                    <img src="img/casal.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="https://i.postimg.cc/J46txFdD/icon-1.png" alt="">
+                    <h3>Musculação</h3>
+                    <p>Falar mais sobre musculação</p>
+                    <a href="#" class="btn">Ler Mais</a>
+                </div>
+            </div>
+
+            <div class="box second">
+                <div class="image">
+                    <img src="img/muculacao.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="https://i.postimg.cc/5N3KRBwF/icon-2.png" alt="">
+                    <h3>Homens</h3>
+                    <p>Falar Mais sobre Musculação</p>
+                    <a href="#" class="btn">Ler Mais</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="img/musculosa.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="https://i.postimg.cc/pTjkP83x/icon-3.png" alt="">
+                    <h3>Mulheres</h3>
+                    <p>Falar Mais sobre Musculação</p>
+                    <a href="#" class="btn">Ler Mais</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="id-pricing" class="pricing">
             
-    </div>
+            <div class="inf">
+                <span>Planos e Preços</span>
+                <H3>Planos com o melhor custo benefcio</H3>
+                <p>falar um pouco sobre isso</p>
+                <P><i class="fas fa-check"></i> Exercício de cardio </P>
+                <P><i class="fas fa-check"></i> Levantamento de peso </P>
+                <P><i class="fas fa-check"></i> Planos alimentares </P>
+                <P><i class="fas fa-check"></i> Acompanhamento de resultados</P>
+                <a href="#" class="btn">Todos os valores</a>
+            </div>
+
+            <div class="plan-basic">
+                <h3>Plano Básico</h3>
+                <div class="price"><span>R$</span>90<span>/mês</span></div>
+                <div class="list">
+                    <P><i class="fas fa-check"></i> Treinador </P>
+                    <P><i class="fas fa-check"></i> Exercício de cardio </P>
+                    <P><i class="fas fa-check"></i> Levantamento de peso </P>
+                    <P><i class="fas fa-check"></i> Planos alimentares </P>
+                    <P><i class="fas fa-check"></i> Acompanhamento de resultados</P>
+                </div>
+                <a href="#" class="btn">Quero</a>
+            </div>
+
+            <div class="plan">
+                <h3>Plano Premiun/h3>
+                <div class="price"><span>R$</span>110<span>/mês</span></div>
+                <div class="list">
+                    <P><i class="fas fa-check"></i> Treinador </P>
+                    <P><i class="fas fa-check"></i> Exercício de cardio </P>
+                    <P><i class="fas fa-check"></i> Levantamento de peso </P>
+                    <P><i class="fas fa-check"></i> Planos alimentares </P>
+                    <P><i class="fas fa-check"></i> Acompanhamento de resultados</P>
+                </div>
+                <a href="#" class="btn">Quero</a>
+            </div>
+
+        </section>
+
+        <section id="id-trainers" class="trainers">
+
+            <h1 class="heading"> <span>Treinadores Especializados</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Nome personal</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkdin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Nome personal</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkdin"></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img src="" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Nome personal</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkdin"></a>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="box">
+                    <img src="" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Nome personal</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkdin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="baner">
+            <span>Junte-se a nós</span>
+            <h3>Ganhe até 70% de desconto</h3>
+            <p>Durante o mês de fevereiro, caso se matricule, você ganha 70% de desconto na primeira mensalidade</p>
+            <a href="#">Quero</a>
+        </section>
+
+        <section class="review">
+
+            <div class="inf">
+                <span>Feedbacks</span>
+                <h3>O que nossos clientes dizem</h3>
+                <p>Quer saber o que nossos clientes falam sobre nós</p>
+                <a href="#" class="btn">Leia todos</a>
+            </div>
+
+            <div class="swiper review-slider">
+                <div class="swiper-wrapeer">
+                    <div class="swiper-slide slide">
+                        <p>Melhor academia da cidade</p>
+                        <div class="user">
+                            <img src="https://i.postimg.cc/4xhDF81N/pic-1.png" alt="">
+                            <div class="info">
+                                <h3>João Luiz</h3>
+                                <span>designer</span>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>O melhor atendimento que eu já tive</p>
+                        <div class="user">
+                            <img src="https://i.postimg.cc/ry7XCXSY/pic-2.png" alt="">
+                            <div class="info">
+                                <h3>Luana</h3>
+                                <span>designer</span>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Equipamentos novos e fáceis de serem utilizados</p>
+                        <div class="user">
+                            <img src="https://i.postimg.cc/7ZxBSmQW/pic-3.png" alt="">
+                            <div class="info">
+                                <h3>john deo</h3>
+                                <span>designer</span>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Os melhores personais estão aqui</p>
+                        <div class="user">
+                            <img src="https://i.postimg.cc/8zjv8vFC/pic-4.png" alt="">
+                            <div class="info">
+                                <h3>Alice</h3>
+                                <span>designer</span>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="id-blogs" class="blogs">
+
+            <h1c class="heading"> <span>Postagens Diárias</span> </h1>
+
+            <div class="swiper blogs-slider">
+                <div class="swiper-wrapeer">
+                    <div class="swiper-slide slide">
+                        <img src="img/muculacao-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
+                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
+                        <p>Escreva um subtitulo para a postagen</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapeer">
+                    <div class="swiper-slide slide">
+                        <img src="img/muculacao-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
+                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
+                        <p>Escreva um subtitulo para a postagen</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapeer">
+                    <div class="swiper-slide slide">
+                        <img src="img/muculacao-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
+                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
+                        <p>Escreva um subtitulo para a postagen</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapeer">
+                    <div class="swiper-slide slide">
+                        <img src="img/muculacao-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
+                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
+                        <p>Escreva um subtitulo para a postagen</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapeer">
+                    <div class="swiper-slide slide">
+                        <img src="img/muculacao-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
+                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
+                        <p>Escreva um subtitulo para a postagen</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
 
     </main>
 
+    <footer class="roda_pe">
 
+        <div class="box-container">
+            <h3>Links rápidos</h3>
+            <a class="links" href="#home">Inicio</a>
+            <a class="links" href="#about"></a>
+            <a class="links" href="#features"></a>
+            <a class="links" href="#pricing"></a>
+            <a class="links" href="#trainers"></a>
+            <a class="links" href="#blogs"></a>
+        </div>
 
-        </form>
-    </div>
+        <div class="box">
+            <h3>Horario de Funcinamento</h3>
+            <p>Seg : <i>7:00 - 22:00</i> </p>
+            <p>Ter : <i>7:00 - 22:00</i> </p>
+            <p>Qua : <i>7:00 - 22:00</i> </p>
+            <p>Qui : <i>7:00 - 22:00</i> </p>
+            <p>Sex : <i>7:00 - 22:00</i> </p>
+            <p>Sab : <i>7:00 - 11:00</i> </p>
+            <p>Dom : <i>Fechada</i> </p>
+        </div>
+        
+        <div class="box">
+            <h3>Nossos contatos</h3>
+            <p> <i class="fas fa-phone"></i> +11 8222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> sejafit@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Florianópolis, Brazil</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+
+            <div class="box">
+                <h3>Novidades</h3>
+                <a href="cadastre.html">Se inscreva para receber as novidades</a>
+            </div>
+        </div>
+
+    </footer>
+
+   
 
 </body>
+
 </html>
