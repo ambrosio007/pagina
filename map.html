@@ -3,79 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="IMC.css">
+    <link rel="stylesheet" href="map.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <title>Calculadora de IMC</title>
-
+    <title>Document</title>
 </head>
 <body>
 
-<header class="header">
+    <header class="header">
+        <a href="home.html" class="logo"><i class="fa-solid fa-dumbbell"></i>LAB 7</a>
 
-    <a href="home.html" class="logo"><i class="fa-solid fa-dumbbell"></i>LAB 7</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
 
-    <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="home.html">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#features">Nossos Serviços</a>
+            <a href="IMC.php">IMC</a>
+            <a href="#trainers">Treinadores</a>
+            <a href="cadastre.html">Cadastre-se</a>
+            <a class="date-h" id="data_hora"></a>
+        </nav>
 
-    <nav class="navbar">
-        <a href="home.html">Início</a>
-        <a href="#about">Sobre</a>
-        <a href="#features">Nossos Serviços</a>
-        <a href="IMC.php">IMC</a>
-        <a href="#trainers">Treinadores</a>
-        <a href="cadastre.html">Cadastre-se</a>
-        <a class="date-h" id="data_hora"></a>
-    </nav>
+    </header>
 
-</header>
+    <main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.237046682366!2d-35.72594112407947!3d-9.66077599042798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x701459e6ce6e737%3A0x6a09fd3dd100da11!2sCentro%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Gustavo%20Paiva%20(Senai%20-%20Po%C3%A7o)!5e0!3m2!1spt-BR!2sbr!4v1740594108990!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
 
-<main>
-    <div class="imc_cal">
-       
-        <form method="post" class="form">
-
-            <h2>Calculadora de IMC</h2>
-            <br>
-            <div class="inp-single">
-
-            <input type="number" class="inp" id="id-peso" name="peso" step="any" required>
-            <label for="id-peso">peso</label>
-
-            </div>
-            <br><br>
-            <div class="inp-single">
-
-            <input type="number" class="inp" id="id-altura" name="altura" step="any" required>
-            <label for="id-altura">altura</label>
-
-            </div>
-           
-            <div class="inp-single">
-            <br><br>
-            <input class="btn-cal" type="submit" name="calcular" value="Calcular IMC">
-
-            </div>
-            <br> <br>
-            <?php
-        if (isset($_POST['calcular'])) {
-            $peso = floatval($_POST['peso']);
-            $altura = floatval($_POST['altura']);
-            $imc = $peso / ($altura * $altura);
-            echo "<p>Seu IMC é: " . number_format($imc, 2) . "</p>";
-        }
-        ?>
-
-        </form>
-
-
-    </div>
-</main>
-
-<footer class="footer">
+    <footer class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>Links rápidos</h3>
-                <a class="links" href="#home">Início</a>
+                <a class="links" href="home.html">Início</a>
                 <a class="links" href="#about">Sobre</a>
                 <a class="links" href="#features">Características</a>
                 <a class="links" href="#pricing">Valores</a>
@@ -94,8 +54,8 @@
             </div>
             <div class="box">
                 <h3>Nossos Contatos</h3>
-                <p> <i class="fas fa-phone"></i> +11 8222-3333 </p>
-                <p> <i class="fas fa-envelope"></i> sejafit@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> +55 82 4002-8922 </p>
+                <p> <i class="fas fa-envelope"></i> LabSeven@gmail.com </p>
                 <p> <a href="map.html"><i class="fas fa-map"></i></a> </i> Maceió, Brazil</p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
@@ -111,15 +71,13 @@
                     <input type="submit" value="Cadastre-se" class="btn">
                 </form>
                 <br>
-                <h1 class="date-h" id="data_hora"></h1>
+                <h1 class="date-h" id="data_hora"> </h1>
             </div>
         </div>
         
     </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="fun.js"></script>
-
+    <script defer src="fun.js"></script>
 </body>
-
 </html>
