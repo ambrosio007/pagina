@@ -1,272 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="style-home.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>LAB 7</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style-home.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <script src="fun.js"></script>
-    <title>Home Page</title>
 
 </head>
 
 <body>
+    <header class="header">
+        <a href="home.html" class="logo"><i class="fa-solid fa-dumbbell"></i>LAB 7</a>
 
-    <header class="nav-bar">
-        <div id="mobile-btn" class="fas fa-bar"> </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
 
-        <a href="home.html" class="logo"><i class="fa-solid fa-dumbbell" id="nav-log" href="home.html"></i>Lab 7</a>
-        
-        <nav class="nav">
-                
-
-                    <a href="home.html">Inicio</a>                           
-                    <a href="IMC.php">IMC</a>                          
-                    <a href="cadastre.html">Cadastre-se</a>             
-                    <a href="#projetos">Projetos</a>
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#features">Nossos Serviços</a>
+            <a href="IMC.php">IMC</a>
+            <a href="#trainers">Treinadores</a>
+            <a href="cadastre.html">Cadastre-se</a>
+            <a class="date-h" id="data_hora"></a>
         </nav>
 
     </header>
 
-    <main class="mid">
-        
-        <section id="id-home" class="home">
+    <main>
+        <section id="home" class="home">
+            <div class="swiper home-slider">
 
-            <div class="swiper home-slide">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-wrapeer" style="background-image: url(img/card-img-1.jpg) no-repeat;">
-                    <div class="content">
-                        <span>Não espere por oportunidades, crie-as</span>
-                        <h3>Seja mais forte do que suas desculpas.</h3>
-                        <a href="#" class="btn">Iniciar</a>
+                    <div class="swiper-slide slide" style="background: url(img/equipamentos-de-academia-ordem-ideal.jpg) no-repeat;">
+                        <div class="content">
+                            <span>Seja Forte, seja fit</span>
+                            <h3>Torne-se mais forte do que suas desculpas.</h3>
+                            <a href="#" class="btn">Iniciar</a>
+                        </div>
                     </div>
 
-                <div class="swiper-wrapeer" style="background-image: url(img/card-img-2.jpg) no-repeat;">
-                    <div class="content">
-                        <span>Não espere por oportunidades, crie-as</span>
-                        <h3>Seja mais forte do que suas desculpas.</h3>
-                        <a href="#" class="btn">Iniciar</a>
+                    <div class="swiper-slide slide" style="background: url(img/melhor-academia.jpg) no-repeat;">
+                        <div class="content">
+                            <span>Seja Forte, seja fit</span>
+                            <h3>Torne-se mais forte do que suas desculpas.</h3>
+                            <a href="#" class="btn">Iniciar</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background: url(img/musculosa.jpg) no-repeat;">
+                        <div class="content">
+                            <span>Seja Forte, seja fit</span>
+                            <h3>Torne-se mais forte do que suas desculpas.</h3>
+                            <a href="#" class="btn">Iniciar</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="swiper-wrapeer" style="background-image: url(img/card-img-3.jpg) no-repeat;">
-                    <div class="content">
-                        <span>Não espere por oportunidades, crie-as</span>
-                        <h3>Seja mais forte do que suas desculpas.</h3>
-                        <a href="#" class="btn">Iniciar</a>
-                    </div>
-                </div>
-
+                <div class="swiper-pagination"></div>
             </div>
 
         </section>
 
         <section id="about" class="about">
-
-            <div  class="image">
-                <img src="img/tipos-de-academia-1.jpeg" alt="">
+            <div class="image">
+                <img src="img/sobre.jpeg" alt="">
             </div>
 
             <div class="content">
+                <span>Sobre Nós</span>
+                <h3 class="title">Cada dia é uma chance de se tornar melhor</h3>
+                <p>Escrever Algo Sobre</p>
 
-                <span>Sobre nós</span>
-                <h3 class="title">Disciplina é a ponte entre metas e realizações.</h3>
-                <p>Escreva algo</p>
+                <div class="box-container">
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Corpo e Mente</h3>
+                        <p>Treine seu corpo e sua mente será treinada</p>
+                    </div>
+
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Vida Saudável</h3>
+                        <p>Conquiste uma vida saudável</p>
+                    </div>
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Estratégias</h3>
+                        <p>Estratégias para seu treinamento</p>
+                    </div>
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Treino</h3>
+                        <p>Treine seu corpo fortemente</p>
+                    </div>
+                </div>
+                <a href="#" class="btn">Ler Mais</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <!--Fim serviços-->
+            <h1 class="heading"> <span>O que Oferecemos</span> </h1>
 
             <div class="box-container">
                 <div class="box">
-                    <h3><i class="fa-solid fa-dumbbell">Corpo e mente</i></h3>
-                    <p>Treine seu corpo e sua mente sera treinada</p>
+                    <div class="image">
+                        <img src="img/casal.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <img src="https://i.postimg.cc/J46txFdD/icon-1.png" alt="">
+                        <h3>Musculação</h3>
+                        <p>Falar Mais sobre Musculação</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="box second">
+                    <div class="image">
+                        <img src="img/muculacao.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <img src="https://i.postimg.cc/5N3KRBwF/icon-2.png" alt="">
+                        <h3>Homens</h3>
+                        <p>Falar Mais sobre Musculação</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
                 </div>
 
                 <div class="box">
-                    <h3><i class="fa-solid fa-dumbbell">Vida saldável</i></h3>
-                    <p>Conquiste uma vida saldável</p>
+                    <div class="image">
+                        <img src="img/musculosa.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <img src="https://i.postimg.cc/pTjkP83x/icon-3.png" alt="">
+                        <h3>Mulheres</h3>
+                        <p>Falar Mais sobre Musculação</p>
+                        <a href="#" class="btn">Ler Mais</a>
+                    </div>
                 </div>
 
-                <div class="box">
-                    <h3><i class="fa-solid fa-dumbbell">Estratégias/i></h3>
-                    <p>Estratégias para seu treinamento</p>
-                </div>
-
-                <div class="box">
-                    <h3><i class="fa-solid fa-dumbbell">Treino</i></h3>
-                    <p>Treine seu corpo</p>
-                </div>
             </div>
-            <a href="#" class="btn">Ler Mais</a>
-            </div>
-
         </section>
 
-        <section id="id-features"class="features">
-
-            <h1 class="heading"> </h1><span>O que oferecemos </span></h1>
-
-            <div class="box-container">
-                <div class="image">
-                    <img src="img/casal.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="https://i.postimg.cc/J46txFdD/icon-1.png" alt="">
-                    <h3>Musculação</h3>
-                    <p>Falar mais sobre musculação</p>
-                    <a href="#" class="btn">Ler Mais</a>
-                </div>
-            </div>
-
-            <div class="box second">
-                <div class="image">
-                    <img src="img/muculacao.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="https://i.postimg.cc/5N3KRBwF/icon-2.png" alt="">
-                    <h3>Homens</h3>
-                    <p>Falar Mais sobre Musculação</p>
-                    <a href="#" class="btn">Ler Mais</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="img/musculosa.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="https://i.postimg.cc/pTjkP83x/icon-3.png" alt="">
-                    <h3>Mulheres</h3>
-                    <p>Falar Mais sobre Musculação</p>
-                    <a href="#" class="btn">Ler Mais</a>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="id-pricing" class="pricing">
-            
-            <div class="inf">
-                <span>Planos e Preços</span>
-                <H3>Planos com o melhor custo benefcio</H3>
+        <section id="pricing" class="pricing">
+            <div class="information">
+                <span>Plano de Preços</span>
+                <h3>plano de preços acessível para você</h3>
                 <p>falar um pouco sobre isso</p>
-                <P><i class="fas fa-check"></i> Exercício de cardio </P>
-                <P><i class="fas fa-check"></i> Levantamento de peso </P>
-                <P><i class="fas fa-check"></i> Planos alimentares </P>
-                <P><i class="fas fa-check"></i> Acompanhamento de resultados</P>
-                <a href="#" class="btn">Todos os valores</a>
+                <p> <i class="fas fa-check"></i> Exercícios de Cardio </p>
+                <p> <i class="fas fa-check"></i> Levantamento de Peso</p>
+                <p> <i class="fas fa-check"></i> Planos Alimentares </p>
+                <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+                <a href="#" class="btn">Todos os Valores</a>
             </div>
 
-            <div class="plan-basic">
+            <div class="plan basic">
                 <h3>Plano Básico</h3>
                 <div class="price"><span>R$</span>90<span>/mês</span></div>
                 <div class="list">
-                    <P><i class="fas fa-check"></i> Treinador </P>
-                    <P><i class="fas fa-check"></i> Exercício de cardio </P>
-                    <P><i class="fas fa-check"></i> Levantamento de peso </P>
-                    <P><i class="fas fa-check"></i> Planos alimentares </P>
-                    <P><i class="fas fa-check"></i> Acompanhamento de resultados</P>
+                    <p> <i class="fas fa-check"></i> Treinador </p>
+                    <p> <i class="fas fa-check"></i> Exercícios de Cardio </p>
+                    <p> <i class="fas fa-check"></i> Levantamento de Peso </p>
+                    <p> <i class="fas fa-check"></i> Planos Alimentares </p>
+                    <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
                 </div>
                 <a href="#" class="btn">Quero</a>
             </div>
 
             <div class="plan">
-                <h3>Plano Premiun/h3>
+                <h3>Plano Premium</h3>
                 <div class="price"><span>R$</span>110<span>/mês</span></div>
                 <div class="list">
-                    <P><i class="fas fa-check"></i> Treinador </P>
-                    <P><i class="fas fa-check"></i> Exercício de cardio </P>
-                    <P><i class="fas fa-check"></i> Levantamento de peso </P>
-                    <P><i class="fas fa-check"></i> Planos alimentares </P>
-                    <P><i class="fas fa-check"></i> Acompanhamento de resultados</P>
+                    <p> <i class="fas fa-check"></i> Treinador </p>
+                    <p> <i class="fas fa-check"></i> Exercícios de Cardio </p>
+                    <p> <i class="fas fa-check"></i> Levantamento de Peso </p>
+                    <p> <i class="fas fa-check"></i> Planos Alimentares </p>
+                    <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
                 </div>
                 <a href="#" class="btn">Quero</a>
             </div>
-
         </section>
 
-        <section id="id-trainers" class="trainers">
-
-            <h1 class="heading"> <span>Treinadores Especializados</span></h1>
-
+        <section id="trainers" class="trainers">
+            <h1 class="heading"> <span>Treinadores Especializados</span> </h1>
             <div class="box-container">
-                <div class="box">
-                    <img src="" alt="">
-                    <div class="content">
-                        <span>Personal</span>
-                        <h3>Nome personal</h3>
-                        <div class="share">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-pinterest"></a>
-                            <a href="#" class="fab fa-linkdin"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="box-container">
                 <div class="box">
-                    <img src="" alt="">
+                    <img src="img/pedro.jpg" alt="">
                     <div class="content">
                         <span>Personal</span>
-                        <h3>Nome personal</h3>
+                        <h3>Pedro Souza</h3>
                         <div class="share">
-                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-facebook-f"></a>
                             <a href="#" class="fab fa-twitter"></a>
                             <a href="#" class="fab fa-pinterest"></a>
-                            <a href="#" class="fab fa-linkdin"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
                         </div>
                     </div>
                 </div>
-            
                 <div class="box">
-                    <img src="" alt="">
+                    <img src="img/ana.jpg" alt="">
                     <div class="content">
                         <span>Personal</span>
-                        <h3>Nome personal</h3>
+                        <h3>Ana da Silva</h3>
                         <div class="share">
-                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-facebook-f"></a>
                             <a href="#" class="fab fa-twitter"></a>
                             <a href="#" class="fab fa-pinterest"></a>
-                            <a href="#" class="fab fa-linkdin"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
                         </div>
                     </div>
                 </div>
- 
+
                 <div class="box">
-                    <img src="" alt="">
+                    <img src="img/josé.jpg" alt="">
                     <div class="content">
                         <span>Personal</span>
-                        <h3>Nome personal</h3>
+                        <h3>José Bezerra</h3>
                         <div class="share">
-                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-facebook-f"></a>
                             <a href="#" class="fab fa-twitter"></a>
                             <a href="#" class="fab fa-pinterest"></a>
-                            <a href="#" class="fab fa-linkdin"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
                         </div>
                     </div>
                 </div>
+
+                <div class="box">
+                    <img src="img/laura.jpg" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Laura Botelho</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
-        <section class="baner">
-            <span>Junte-se a nós</span>
-            <h3>Ganhe até 70% de desconto</h3>
-            <p>Durante o mês de fevereiro, caso se matricule, você ganha 70% de desconto na primeira mensalidade</p>
-            <a href="#">Quero</a>
+        <section class="banner">
+            <span>Junte-se a Nós</span>
+            <h3>Ganhe até 50% de desconto</h3>
+            <p>Durante o mês de novembro, caso você se matricule, você ganhar 50% de
+                desconto na primeira mensalidade
+            </p>
+            <a href="#" class="btn">Quero</a>
         </section>
 
         <section class="review">
-
-            <div class="inf">
+            <div class="information">
                 <span>Feedbacks</span>
                 <h3>O que nossos clientes dizem</h3>
-                <p>Quer saber o que nossos clientes falam sobre nós</p>
-                <a href="#" class="btn">Leia todos</a>
+                <p>Quer saber o que nossos clientes falam sobre nós?</p>
+                <a href="#" class="btn">Leia Todos</a>
             </div>
-
             <div class="swiper review-slider">
-                <div class="swiper-wrapeer">
+
+                <div class="swiper-wrapper">
+
                     <div class="swiper-slide slide">
                         <p>Melhor academia da cidade</p>
                         <div class="user">
@@ -319,122 +316,130 @@
 
         </section>
 
-        <section id="id-blogs" class="blogs">
-
-            <h1c class="heading"> <span>Postagens Diárias</span> </h1>
-
+        <section id="blogs" class="blogs">
+            <h1 class="heading"> <span>Postagens Diárias</span> </h1>
             <div class="swiper blogs-slider">
-                <div class="swiper-wrapeer">
-                    <div class="swiper-slide slide">
-                        <img src="img/muculacao-2.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
-                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
-                        <p>Escreva um subtitulo para a postagen</p>
-                        <a href="#" class="btn">Ler Mais</a>
-                    </div>
-                </div>
+                <div class="swiper-wrapper">
 
-                <div class="swiper-wrapeer">
                     <div class="swiper-slide slide">
-                        <img src="img/muculacao-2.jpg" alt="">
+                        <div class="image">
+                            <img src="img/de-hoje-ta-pago.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">22 outubro, 2023</a>
+                            </div>
+                            <h3>fitness não é ser melhor que outra pessoa</h3>
+                            <p>Escrever um subtítulo para a postagem</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
                     </div>
-                    <div class="content">
-                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
-                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
-                        <p>Escreva um subtitulo para a postagen</p>
-                        <a href="#" class="btn">Ler Mais</a>
-                    </div>
-                </div>
 
-                <div class="swiper-wrapeer">
                     <div class="swiper-slide slide">
-                        <img src="img/muculacao-2.jpg" alt="">
+                        <div class="image">
+                            <img src="img/treino-corda.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">22 outubro, 2023</a>
+                            </div>
+                            <h3>fitness não é ser melhor que outra pessoa</h3>
+                            <p>Escrever um subtítulo para a postagem</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
                     </div>
-                    <div class="content">
-                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
-                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
-                        <p>Escreva um subtitulo para a postagen</p>
-                        <a href="#" class="btn">Ler Mais</a>
-                    </div>
-                </div>
 
-                <div class="swiper-wrapeer">
                     <div class="swiper-slide slide">
-                        <img src="img/muculacao-2.jpg" alt="">
+                        <div class="image">
+                            <img src="img/agachamento.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">22 outubro, 2023</a>
+                            </div>
+                            <h3>fitness não é ser melhor que outra pessoa</h3>
+                            <p>Escrever um subtítulo para a postagem</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
                     </div>
-                    <div class="content">
-                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
-                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
-                        <p>Escreva um subtitulo para a postagen</p>
-                        <a href="#" class="btn">Ler Mais</a>
-                    </div>
-                </div>
 
-                <div class="swiper-wrapeer">
                     <div class="swiper-slide slide">
-                        <img src="img/muculacao-2.jpg" alt="">
+                        <div class="image">
+                            <img src="img/de-hoje-ta-pago.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">22 outubro, 2023</a>
+                            </div>
+                            <h3>fitness não é ser melhor que outra pessoa</h3>
+                            <p>Escrever um subtítulo para a postagem</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
                     </div>
-                    <div class="content">
-                        <div class="link"> <a href="#">Por adimin</a> <span>|</span> <a href="#">12 outubro, 1999</a></div>
-                        <h3>A jornada é longa, mas a recompensa é ainda maior.</h3>
-                        <p>Escreva um subtitulo para a postagen</p>
-                        <a href="#" class="btn">Ler Mais</a>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/yoga.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">22 outubro, 2023</a>
+                            </div>
+                            <h3>fitness não é ser melhor que outra pessoa</h3>
+                            <p>Escrever um subtítulo para a postagem</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-
         </section>
 
     </main>
 
-    <footer class="roda_pe">
-
+    <footer class="footer">
         <div class="box-container">
-            <h3>Links rápidos</h3>
-            <a class="links" href="#home">Inicio</a>
-            <a class="links" href="#about"></a>
-            <a class="links" href="#features"></a>
-            <a class="links" href="#pricing"></a>
-            <a class="links" href="#trainers"></a>
-            <a class="links" href="#blogs"></a>
-        </div>
-
-        <div class="box">
-            <h3>Horario de Funcinamento</h3>
-            <p>Seg : <i>7:00 - 22:00</i> </p>
-            <p>Ter : <i>7:00 - 22:00</i> </p>
-            <p>Qua : <i>7:00 - 22:00</i> </p>
-            <p>Qui : <i>7:00 - 22:00</i> </p>
-            <p>Sex : <i>7:00 - 22:00</i> </p>
-            <p>Sab : <i>7:00 - 11:00</i> </p>
-            <p>Dom : <i>Fechada</i> </p>
-        </div>
-        
-        <div class="box">
-            <h3>Nossos contatos</h3>
-            <p> <i class="fas fa-phone"></i> +11 8222-3333 </p>
-            <p> <i class="fas fa-envelope"></i> sejafit@gmail.com </p>
-            <p> <i class="fas fa-map"></i> Florianópolis, Brazil</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-pinterest"></a>
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a class="links" href="#home">Início</a>
+                <a class="links" href="#about">Sobre</a>
+                <a class="links" href="#features">Características</a>
+                <a class="links" href="#pricing">Valores</a>
+                <a class="links" href="#trainers">Treinadores</a>
+                <a class="links" href="#blogs">blogs</a>
             </div>
-
+            <div class="box">
+                <h3>Horário de Funcionamento</h3>
+                <p> Segunda : <i> 7:00 - 22:00 </i> </p>
+                <p> Terça : <i> 7:00 - 22:00 </i> </p>
+                <p> Quarta : <i> 7:00 - 22:00 </i> </p>
+                <p> Quinta : <i> 7:00 - 22:00 </i> </p>
+                <p> Sexta : <i> 7:00 - 22:00 </i> </p>
+                <p> Sábado : <i> 7:00am - 10:30 </i> </p>
+                <p> Domingo : <i> Fechado </i> </p>
+            </div>
+            <div class="box">
+                <h3>Nossos Contatos</h3>
+                <p> <i class="fas fa-phone"></i> +11 8222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> sejafit@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Florianópolis, Brazil</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
             <div class="box">
                 <h3>Novidades</h3>
-                <a href="cadastre.html">Se inscreva para receber as novidades</a>
+                <p>Se inscreva para receber as novidades</p>
+                <form action="cadastre.html">
+                    <input type="submit" value="Cadastre-se" class="btn">
+                </form>
+                <br>
+                <h1 class="date-h" id="data_hora"> </h1>
             </div>
         </div>
-
+        
     </footer>
 
-   
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer src="fun.js"></script>
 </body>
 
 </html>

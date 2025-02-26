@@ -121,7 +121,7 @@ main {
     justify-content: center;
 }
 
-.container{
+.imc_cal{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 4%;
@@ -130,20 +130,20 @@ main {
 
 .form {
     background-color: aliceblue;
-    max-width: 600px;
-    height: 640px;
-    padding: 60px;
+    max-width: 500px;
+    height: 490px;
+    padding: 40px;
     border-radius: 20px;
 }
 
-.form h1 {
-    font-size: 35px;
+.form h2 {
+    font-size: 25px;
     text-align: center;
     
 }
 
 .form p {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin: 20px 0;
     
@@ -161,11 +161,7 @@ main {
     bottom: 5px;
     transition: all 0.2s;
     cursor: text;
-    font-size: 20px;
-}
-
-.inp-dma{
-    font-size: 40px;
+    font-size: 18px;
 }
 
 .inp {
@@ -185,20 +181,20 @@ main {
 
 }
 
-.btn_sub {
+.btn-cal {
     position: relative;
     background-color: rgb(1, 218, 247);
     width: 55%;
-    left: 60px;
+    left: 50px;
     border-radius: 30px;
-    padding: 10px 40px;
+    padding: 10px;
     border: 0;
-    font-size: 20px;
+    text-align: center;
     
 }
 
-.btn_sub:hover{
-    background-color: rgb(2, 144, 163);
+.btn-cal:hover{
+    background-color: rgb(1, 135, 153);
 }
 
 .footer{

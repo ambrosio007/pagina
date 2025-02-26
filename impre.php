@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style-i.css">
+    <title>Dados do cadastro</title>
 </head>
 
 <body>
@@ -29,48 +29,73 @@
 
 </header>
 
-    <main>
+<main>
 
-    <div class="container_resul">
-        <form class="form" action="impre.php" method="post">
-            <h1>Cadastre-se</h1>
-            <p>Preencha todos os campos</p>
+    <div class="container">
+        <form class="form">
+                <div class="box_inf">            
+                
+                <?php
 
-            <div class="inp-single">
-                <input type="text" class="inp" name="nome" id="id_name" autocomplete="off" required>
-                <label for="id_name">Nome completo</label>
-                </div>
-            <br>
-            <div class="inp-single">
-                <input type="number" class="inp" name="num_tel" id="id_num" autocomplete="off" required>
-                <label for="id_num">Número para contato</label>
-            </div>
-            <br>
-            <input type="date" class="inp" name="dma" id="id_dma" required>
-            <br>
-            <div class="inp-single">
-                <input type="email" class="inp" name="email" id="id_email" autocomplete="off" required>
-                <label for="id_email">E-mail</label>
-            </div>
-            <br>
-            <div class="inp-single">
-                <input type="password" class="inp" name="senha" id="id_senha" autocomplete="off" required>
-                <label for="id_senha">Senha</label>
-            </div> 
-            <br>
-                <input type="file" name="file" class="btn_arq" >
-                <br><br>
-                <input type="submit" class="btn_sub" name="sub_env">
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $nome = htmlspecialchars($_POST['nome']);
+                    $num = htmlspecialchars($_POST['num_tel']);
+                    $date = htmlspecialchars($_POST['dma']);
+                    $email = htmlspecialchars($_POST['email']);
+                    $senha = htmlspecialchars($_POST['senha']);
 
-            
+                    echo "<h2>Dados Enviados</h2>";
+                    echo "<p><strong>Nome :</strong>$nome</p>";
+                    echo "<p><strong>Número de Tel :</strong>$num</p>";
+                    echo "<p><strong>Data de Nascimento : </strong>$date</p>";
+                    echo "<p><strong>E-mail :</strong>$email</p>";
+                    echo "<p><strong>Senha :</strong>$senha</p>";
+                } else {
+                    header("Location : cadastre.html");
+                    exit();
+                }
+
+
+                ?>
+
+                <?php
+                    
+                $folder = __DIR__ ."/uploads/";
+
+                if(!file_exists($folder) || !is_dir($folder)){
+                    mkdir($folder, 0755);
+                }
+                
+                $getPost = filter_input(INPUT_GET, "post", FILTER_VALIDATE_BOOLEAN);
+                    
+
+                if($_FILES && !empty($_FILES['file']['name'])){
+                    $fileUpload = $_FILES['file'];
+                        
+                    $allowebTypes = [
+                        "image/jpeg",
+                        "image/png",
+                        "application/pdf"
+                    ];
+                    
+                }elseif ( $getPost){
+                    echo "<p class='trigger waring'>Não temte eviar o Examon</p>";
+                } else{
+                    if($_FILES){
+                        echo "<p class='trigger waring'>Selecione um arquivo para ser enviado!</p>";
+                    }
+                };
+                    
+                ?>
+
             </div>
-    
         </form>
-    </div>
+    </div>    
 
-    </main>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
+
         <div class="box-container">
             <div class="box">
                 <h3>Links rápidos</h3>
@@ -118,6 +143,15 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="fun.js"></script>
+    
+
+
+
+
 
 </body>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="fun.js"></script>
+
 </html>
